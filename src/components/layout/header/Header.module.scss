@@ -1,0 +1,105 @@
+@import 'src/assets/styles/_variables.scss';
+
+.header{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $lightActive;
+
+
+  padding: 1.5em 5em;
+
+
+  font-family: $default-font;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: $darkRed;
+
+  -webkit-box-shadow: 1px 10px 8px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 10px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1em;
+  }
+
+  span:first-child{
+    color: $active;
+  }
+
+  div:last-child{
+    a{
+      color: $lightActive;
+      text-decoration: none;
+      &:hover{
+        color: $active;
+      }
+
+      transition: color 0.5s;
+    }
+    column-gap: 4em;
+    position: absolute;
+    top: 10em;
+    right: 20em;
+  }
+}
+
+@media (max-width: 600px){
+  .header{
+    div:last-child{
+      column-gap: 4vw;
+      right: 23vw;
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .header{
+    font-size: 6px;
+    div{
+      column-gap: 1vw;
+    }
+    div:last-child{
+      a{
+        color: $lightActive;
+        text-decoration: none;
+        &:hover{
+          color: $active;
+        }
+  
+        transition: color 0.5s;
+      }
+      column-gap: 4em;
+      position: absolute;
+      top: 12em;
+      left: 4em
+    }
+  }
+}
+
+@media (max-width:271px) {
+  .header{
+    font-size: 6px;
+    div{
+      column-gap: 1vw;
+    }
+    div:last-child{
+      a{
+        color: $lightActive;
+        text-decoration: none;
+        &:hover{
+          color: $active;
+        }
+  
+        transition: color 0.5s;
+      }
+      column-gap: 4em;
+      position: absolute;
+      top: 12em;
+      left: 10em
+    }
+  }
+}

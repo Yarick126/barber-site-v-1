@@ -1,0 +1,44 @@
+@import 'src/assets/styles/_variables.scss';
+
+
+.notification{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1vh;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  opacity: 0;
+  padding: 1em;
+  top: 10vh;
+  left: 5vw;
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgb(123, 42, 42);
+  .green{
+    font-size: 20px;
+    color: green;
+  }
+
+  .red{
+    font-size: 20px;
+    color: red;
+  }
+
+  animation: notify cubic-bezier(.47,-.44,.49,1.46) 5s;
+}
+
+@keyframes notify {
+  0%{
+    left: -50vw;
+    opacity: 1;
+  }
+  50% {
+    left: 2vw;
+    opacity: 1;
+  }
+  100%{
+    left: 5vw;
+    opacity: 0;
+  }
+}

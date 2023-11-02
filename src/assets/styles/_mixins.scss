@@ -1,0 +1,7 @@
+@mixin backGradient{
+  background: rgb(83,0,0);
+  background: radial-gradient(circle at left top, rgba(83,0,0,1) 10%, rgba(83,0,0,1) 30%, rgb(0, 0, 0) 95%);
+  backdrop-filter: blur(8px) saturate(90%) contrast(110%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

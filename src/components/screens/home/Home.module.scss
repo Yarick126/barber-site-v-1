@@ -1,0 +1,85 @@
+@import 'src/assets/styles/_variables.scss';
+
+.Home{
+  color: $active;
+  padding: 10em 4em 0;
+
+  div{
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    span:first-child{
+      font-size: 80px;
+    }
+    span:last-child{
+      color: #c2b5ae;
+      font-size: 40px;
+    }
+    p{
+      word-wrap: break-word;
+    }
+  }
+}
+
+@media (max-width: 1001px) {
+
+  section>div>span{
+    display: inline-block;
+    width: 80vw;
+    word-wrap: break-word;
+  }
+  section>div>p{
+    word-wrap: break-word;
+    display: inline-block;
+    width: 90vw;
+
+  }
+
+  img{
+    display: none;
+  }
+}
+@media (max-width: 600px){
+  .Home{
+    p{
+      width: 80vw;
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .Home{
+    padding: 5em 2em 0;
+    div{
+      span:first-child{
+        font-size: 40px;
+      }
+      span:last-child{
+        font-size: 30px;
+      }
+      p{
+        width: 80vw;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 271px) {
+  .Home{
+    padding: 4em 2em 0;
+    div{
+      span:first-child{
+        font-size: 20px;
+      }
+      span:last-child{
+        font-size: 20px;
+      }
+      p{
+        width: 80vw;
+        font-size: 10px;
+      }
+    }
+  }
+}

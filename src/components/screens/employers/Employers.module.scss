@@ -1,0 +1,79 @@
+@import 'src/assets/styles/_variables.scss';
+
+.Employers{
+  color: $lightActive;
+  display: flex;
+  padding-top: 8em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .text{
+      display: flex;
+      flex-direction: column;
+      padding: 2em;
+      width: 30em;
+      background-color: #390202;
+      border-radius: 40px;
+      span{
+        font-size: 35px;
+        width: fit-content;
+        padding: 1em;
+        background-color: #4C0B13;
+        border-radius: 40px;
+      }
+      p{
+        word-wrap: break-word;
+      }
+    }
+
+    img{
+      border-radius: 100px;
+      width: 500px;
+      height: 400px;
+      -o-object-fit: cover;
+    }
+  }
+  div:last-child{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px){
+  .Employers{
+    font-size: 12px;
+    div:first-child{
+
+      .text{
+        span{
+         
+        }
+        p{
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 271px) {
+  .Employers{
+    padding-top: 7vh;
+    div:first-child{
+      .text{
+        row-gap: 1em;
+        span{
+          font-size: 19px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

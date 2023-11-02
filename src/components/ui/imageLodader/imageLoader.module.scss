@@ -1,0 +1,22 @@
+@import 'src/assets/styles/_variables.scss';
+
+.imageLoader{
+  height: 6vh;
+  input{
+    background-color: $darkRed;
+    color: $active;
+    font-size: 15px;
+    &:hover{
+      background-color: darken($color: $darkRed, $amount: 2%);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .imageLoader{
+    height: fit-content;
+    input{
+      font-size: 10px;
+    }
+  }
+}

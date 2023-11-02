@@ -1,0 +1,46 @@
+@import 'src/assets/styles/_variables.scss';
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5vw;
+  width: fit-content;
+  border: 1px solid $active;
+  font-size: 15px;
+  color: $active;
+  border-radius: 20px;
+
+  background-color: transparent;
+  overflow: hidden;
+  outline: none;
+
+  button{
+    padding: 1em;
+    height: 100%;
+    font-size: 15px;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover{
+      color: $darkRed;
+      background-color: $active;
+    }
+
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons{
+    column-gap: 0.5vw;
+    border-radius: 15px;
+  
+    button{
+      padding: 1em;
+      height: 100%;
+      font-size: 10px;
+      transition: all 0.5s;
+    }
+  }
+}
